@@ -1,0 +1,12 @@
+<h2>Add New Student</h2>
+
+<form [formGroup]="profileForm" (ngSubmit)="updateProfile()" style="display: contents;">
+    <input formControlName="name" class="form-control text-spaces" type="text" placeholder="Enter Full Name"><br/>
+
+    <input formControlName="roll_no" class="form-control text-spaces" type="text" placeholder="Enter Roll No"><br/>
+    <input formControlName="s_class" class="form-control text-spaces" type="text" placeholder="Enter class name"><br/>
+    <input formControlName="standard" class="form-control text-spaces" type="text" placeholder="Enter standard"><br/>
+    <input formControlName="city" class="form-control text-spaces" type="text" placeholder="Enter City"><br/>
+    <button class="btn btn-primary" style="margin-right: 10px;">Save</button><br/>
+    <a routerLink="">Back</a>
+</form>

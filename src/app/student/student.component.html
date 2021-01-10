@@ -1,0 +1,22 @@
+<h2>Student Details</h2>
+<a routerLink="/registration">Add new students</a>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Roll No</th>
+    <th>Class</th>
+    <th>Standard</th>
+    <th>City</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    </tr>
+    <tr *ngFor="let stud of student_details">
+    <td>{{stud.name}}</td>
+    <td>{{stud.roll_no}}</td>
+    <td>{{stud.s_class}}</td>
+    <td>{{stud.standard}}</td>
+    <td>{{stud.city}}</td>
+    <td><a routerLink="/edit/{{stud._id}}">Edit</a></td>
+    <td><a routerLink="" (click)="delete(stud._id)">Delete</a></td>
+    </tr>
+</table>

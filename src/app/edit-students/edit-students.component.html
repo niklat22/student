@@ -1,0 +1,12 @@
+<h2>Edit Students Deatils</h2>
+<form [formGroup]="studentEditForm" (ngSubmit)="updateStudent()" style="display: contents;">
+    <input formControlName="name" class="form-control text-spaces" type="text" placeholder="Enter Name" value="{{name}}"><br/>
+    <input formControlName="roll_no" class="form-control text-spaces" type="text" placeholder="Enter Roll No" value="{{roll_no}}"><br/>
+    <input formControlName="s_class" class="form-control text-spaces" type="text" placeholder="Enter Class" value="{{s_class}}"><br/>
+    <input formControlName="standard" class="form-control text-spaces" type="text" placeholder="Enter Standard" value="{{standard}}"><br/>
+    <input formControlName="city" class="form-control text-spaces" type="text" placeholder="Enter City" value="{{city}}"><br/>
+
+    <button class="btn btn-primary" style="margin-right: 10px;">Save</button>
+</form>
+<button class="btn btn-secondary" (click)="close()">Cancel</button>
+
